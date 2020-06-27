@@ -1,10 +1,15 @@
 import React from 'react'
 
-import { ExampleComponent } from 'react-button-oa'
-import 'react-button-oa/dist/index.css'
+import { OzanButtonComponent as Button} from 'react-button-oa'
 
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+
+  function handleClick() {
+      alert("Button clicked!")
+  }
+
+  return <Button onClick={handleClick} text="Button!"/>
+
 }
 
 export default App
